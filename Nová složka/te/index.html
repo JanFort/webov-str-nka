@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Jaguar</a>
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Nové</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ojeté</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Díly</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS--YB_HqHk_oaKIIEhT0iETX0s0SMQ47vQ4Q&usqp=CAU" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvoj5I7rkLqOd-n0V0zE0w9i1Y2m0e3GTBIg&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRXrEcNVLbHVBzV00YPMv4NUmlqUthxvjREw&usqp=CAU" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>      
+      <div class="card-group">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMH0cCyzEi_4O3DpjOusnTlSh8HuoV0ADFZw&usqp=CAU" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">jaguar XE</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card h-100">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREwxawYM-TXMilCNh_hawSB5upzbAZ9lD38Q&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">jaguar FX</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">jaguar F-type</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCtmej_M4ncrvb2hvTLYOJ5H0XhBdkT93_Xw&usqp=CAU">
+          <div class="card-body">
+            <h5 class="card-title">Jaguar JX</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-ra_1lOOrW630Gu6iJ8eHb4xHsT0fwqAmEw&usqp=CAU">
+          <div class="card-body">
+            <h5 class="card-title">jaguar F-TYPE</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="..." class="card-img-top" alt="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4cTbMxopOZDvA_F0tSE3R16yqnFJyPi3DUg&usqp=CAU">
+          <div class="card-body">
+            <h5 class="card-title">jaguar FX</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
